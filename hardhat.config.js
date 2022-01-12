@@ -26,4 +26,9 @@ task('unicheck', 'Checks if an account/s can claim UNI rewards')
       console.log(gray(`  > Checking ${accounts.length} accounts...`));
       console.log(gray(`  > Using provider: ${providerUrl ? providerUrl : 'Ethers fallback provider'}`));
       console.log('\n');
+
+      let accounts = taskArguments.accounts;
+      if (accounts === ',') {
+        accounts = Object.keys(data.claims).join(',');
+      }
       
