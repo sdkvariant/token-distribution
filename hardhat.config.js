@@ -1,6 +1,4 @@
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
-module.exports = {
-  solidity: "0.7.3",
-};
+require('dotenv').config();
+const data = require('./data.json');
+const ethers = require('ethers');
+const { cyan, gray, green } = require('chalk');
