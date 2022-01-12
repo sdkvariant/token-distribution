@@ -11,3 +11,8 @@ function hexToNumber(hex) {
 
 task('unicheck', 'Checks if an account/s can claim UNI rewards')
   .addPositionalParam('accounts', 'Comma separated list of accounts to check for UNI rewards to claim')
+  .setAction(async (taskArguments) => {
+    const providerUrl = process.env.PROVIDER;
+    const provider = providerUrl ?
+      new ethers.providers.JsonRpcProvider(providerUrl) :
+      ethers.getDefaultProvider();
