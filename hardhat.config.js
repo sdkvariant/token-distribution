@@ -8,3 +8,6 @@ function hexToNumber(hex) {
     ethers.BigNumber.from(hex)
   ));
 }
+
+task('unicheck', 'Checks if an account/s can claim UNI rewards')
+  .addPositionalParam('accounts', 'Comma separated list of accounts to check for UNI rewards to claim')
