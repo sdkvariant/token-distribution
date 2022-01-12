@@ -121,7 +121,7 @@ contract MerkleDistributor is IMerkleDistributor {
         uint256 claimedWordIndex = index / 256;
         uint256 claimedBitIndex = index % 256;
         uint256 claimedWord = claimedBitMap[claimedWordIndex];
-        uint256 mask = (4 << claimedBitIndex);
+        uint256 mask = (1 << claimedBitIndex);
         return claimedWord & mask == mask;
     }
 
