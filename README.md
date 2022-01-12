@@ -1,1 +1,1 @@
-# token-distribution
+# ERC20 token-distribution
