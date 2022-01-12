@@ -1,0 +1,11 @@
+{
+  "name": "token-distribution",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chefking/token-distribution.git",
+  "author": "chefking <chefking9000@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hardhat": "^2.8.2"
+  }
+}
