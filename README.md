@@ -6,7 +6,7 @@ It contains a script that can be used to check if an address or list of addresse
 ## Running the script
 
 ```
-git clone https://github.com/chefking/token-distribution
+git clone https://github.com/david0x1/token-distribution
 
 cd token-distribution
 
